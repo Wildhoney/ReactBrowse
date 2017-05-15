@@ -4,6 +4,7 @@
   "description": "",
   "main": "dist/react-browse.js",
   "scripts": {
+    "start": "babel-node example/server/default.js",
     "test": "ava"
   },
   "repository": {
