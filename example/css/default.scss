@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+section.browser {
+  width: 70vw;
+  height: 70vh;
+  position: relative;
+
+  @media screen and (max-width: 480px) {
+    width: 95vw;
+    height: 95vh;
+  }
+
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  > section.app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > var.url {
+      border: 1px solid red;
+      font-style: normal;
+      align-self: flex-start;
+    }
+  }
+}
